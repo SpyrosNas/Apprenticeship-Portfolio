@@ -1,0 +1,22 @@
+Spyros' Bookstore is a web-based (you guessed right!) bookstore.
+
+Technologies Used:
+
+Backend: PHP, MySQL
+Frontend: HTML, CSS
+Database: MySQL (XAMPP)
+Security: Password Hashing (Bcrypt)
+
+Project Features:
+
+User Features:
+✅ View available books with images and descriptions.
+✅ Search for books by title or author.
+✅ Add books to the shopping cart.
+✅ Proceed to checkout with payment options.
+✅ Register and log in to manage purchases.
+
+Admin Features:
+✅ Add new books with price, description, and cover images.
+✅ Edit book details.
+✅ Delete books from the system.

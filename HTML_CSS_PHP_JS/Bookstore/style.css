@@ -1,0 +1,608 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End of CSS reset*/
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar */
+nav {
+    background: #444;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Search Bar Styling */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 1em;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-input:focus {
+    border-color: #333;
+}
+
+.search-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.search-button:hover {
+    background-color: #218838;
+}
+
+
+/* Cart Section */
+.cart {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cart h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart li {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2em;
+}
+
+.cart li:last-child {
+    border-bottom: none;
+}
+
+/* Buy Now Button */
+.buy-now-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.buy-now-button:hover {
+    background-color: #218838;
+}
+
+/* Book List Styling */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-cover {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* Cart Actions */
+.cart-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Checkout Page Styling */
+.checkout-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.checkout-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.total-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkout-form label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus,
+.checkout-form select:focus {
+    border-color: #333;
+}
+
+/* Payment Options */
+.checkout-form select {
+    cursor: pointer;
+}
+
+/* Confirm Purchase Button */
+.checkout-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #218838;
+}
+
+/* Success Message */
+.checkout-success {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+/* Back to Main Page Button */
+.back-to-home-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.back-to-home-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Add Book Page Styling */
+.add-book-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.add-book-container h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Form Styling */
+.add-book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-book-form label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-book-form input,
+.add-book-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.add-book-form input:focus,
+.add-book-form textarea:focus {
+    border-color: #333;
+}
+
+/* File Upload */
+.add-book-form input[type="file"] {
+    border: none;
+    padding: 5px;
+    background: #f9f9f9;
+}
+
+/* Submit Button */
+.add-book-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-book-button:hover {
+    background-color: #218838;
+}
+
+/* Edit Book Page Styling */
+.edit-book-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.edit-book-container h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Form Styling */
+.edit-book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-book-form label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.edit-book-form input,
+.edit-book-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.edit-book-form input:focus,
+.edit-book-form textarea:focus {
+    border-color: #333;
+}
+
+/* File Upload */
+.edit-book-form input[type="file"] {
+    border: none;
+    padding: 5px;
+    background: #f9f9f9;
+}
+
+/* Current Cover */
+.current-cover {
+    margin-bottom: 10px;
+    display: block;
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Update Button */
+.update-book-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.update-book-button:hover {
+    background-color: #0056b3;
+}
+
+/* Login Page Styling */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Form Styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #333;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Register Page Styling */
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.register-container h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Form Styling */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-form label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.register-form input:focus {
+    border-color: #333;
+}
+
+/* Register Button */
+.register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-button:hover {
+    background-color: #218838;
+}
