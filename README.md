@@ -1,6 +1,6 @@
-# Apprenticeship-Portfolio  
+# Apprenticeship Portfolio  
 
-Hello, world!  
+Hello world!  
 
 My name is Spyridon Nasopoulos, and I live in Thessaloniki, Greece.  
 
